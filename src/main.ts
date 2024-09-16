@@ -4,12 +4,12 @@ import App from "./App.vue";
 
 import { createMemoryHistory, createRouter } from "vue-router";
 
-import HomeView from "./components/HomeView.vue";
+import DrawingsView from "./components/DrawingsView.vue";
 import AboutView from "./components/AboutView.vue";
 
 const routes = [
   { path: "/", component: AboutView },
-  { path: "/home", component: HomeView },
+  { path: "/drawings", component: DrawingsView },
 ];
 
 const router = createRouter({

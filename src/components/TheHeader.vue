@@ -6,7 +6,8 @@ const props = defineProps<{
 
 <template>
   <div class="flex justify-between w-full p-4 font-bold text-xl text-primary">
-    <div
+    <RouterLink
+      to="/"
       class="cursor-pointer"
       :class="{
         underline: type === 'about',
@@ -14,10 +15,11 @@ const props = defineProps<{
       }"
     >
       CRETOIS Charles
-    </div>
+    </RouterLink>
 
     <div class="flex">
-      <div
+      <RouterLink
+        to="/drawings"
         class="ml-4 cursor-pointer"
         :class="{
           underline: type === 'drawings',
@@ -25,7 +27,7 @@ const props = defineProps<{
         }"
       >
         Dessins
-      </div>
+      </RouterLink>
     </div>
   </div>
 </template>
